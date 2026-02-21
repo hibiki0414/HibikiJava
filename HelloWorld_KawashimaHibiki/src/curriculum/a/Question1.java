@@ -42,12 +42,12 @@ public class Question1 {
 		doubleNum = 10.5;
 		
 		// 変数letterの初期値を設定
-		char letter = ' ';
+		char letter = '\u0000';
 		// 変数letterに"a"を代入
 		letter = 'a';
 		
 		// 変数lettersの初期値を設定
-		String letters = " ";
+		String letters = null;
 		// 変数lettersに"ハロー"を代入
 		letters = "ハロー";
 		
@@ -255,7 +255,7 @@ public class Question1 {
 		// Q13. String型の変数textに指定の文章を代入
 		String text = "私はJavaが好きです。Javaは楽しい！";
 		
-		// 「Java」を「Python」に置き換えて表示
+		// 「Java」を「Python」に置き換えて出力
 		System.out.println(text.replace("Java", "Python"));
 	}
 }
