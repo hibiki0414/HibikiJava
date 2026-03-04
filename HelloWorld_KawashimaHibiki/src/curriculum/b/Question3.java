@@ -177,30 +177,17 @@ public class Question3 {
 
 			// 変数lが1から9になるまで列を設定
 			for (int l = 1; l <= 9; l++) {
-
-				// 行となる被乗数を出力
-				if (k < 10)
-					System.out.print("0");
-				System.out.print(k);
-
-				// 掛け算記号" * "を出力
-				System.out.print(" * ");
-
-				// 列となる乗数を出力
-				if (l < 10)
-					System.out.print("0");
-				System.out.print(l);
-
-				// イコール記号" = "を出力
-				System.out.print(" = ");
-
-				// 積を出力
+				
+				// 積を計算
 				int result = k * l;
-				if (result < 10)
-					System.out.print("0");
 
-				// 仕切り" ││ "を出力
-				System.out.print(result + " |│ ");
+				// printfを使用して"k * l = result"の形で出力
+				System.out.printf("%02d * %02d = %02d", k, l, result);
+
+				// 仕切りの出力
+				if (l < 9) {
+					System.out.print(" || ");
+				}
 			}
 			// 1行出力したら改行する
 			System.out.println();
@@ -253,8 +240,9 @@ public class Question3 {
 				// 指定の商品以外の場合"『""』は指定の商品ではありません"と出力
 				System.out.println("『" + item + "』は指定の商品ではありません");
 				break;
+
+			// scanner.close();
 			}
 		}
-		// scanner.close();
 	}
 }
