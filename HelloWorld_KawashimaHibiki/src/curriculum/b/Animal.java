@@ -1,0 +1,18 @@
+package curriculum.b;
+
+public class Animal {
+	// フィールド（変数）の宣言
+	private String name;
+	private double length;
+	private int speed;
+
+	// 各変数のgetterとsetter
+	public String getName() { return name; }
+	public void setName(String name) { this.name = name; }
+
+	public double getLength() { return length; }
+	public void setLength(double length) { this.length = length; }
+
+	public int getSpeed() { return speed; }
+	public void setSpeed(int speed) { this.speed = speed; }
+}
