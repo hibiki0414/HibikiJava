@@ -1,7 +1,7 @@
 package curriculum.b;
 
 public class Animal {
-	// フィールド（変数）の宣言
+	// 変数の宣言
 	private String name;
 	private double length;
 	private int speed;

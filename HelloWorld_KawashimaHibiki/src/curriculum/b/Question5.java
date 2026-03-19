@@ -2,7 +2,7 @@ package curriculum.b;
 
 /*
  * [概要] Java基礎問題5の処理
- * [詳細] メソッドの作成、呼び出し、およびクラス間の連携を処理する。
+ * [詳細] メソッドの作成と呼び出し、クラス間の連携を処理する。
  */
 public class Question5 {
 
@@ -10,7 +10,7 @@ public class Question5 {
 
 		/*
 		 * [概要] Q1処理
-		 * [詳細] helloWorldメソッドを呼び出し、文字列を表示する
+		 * [詳細] helloWorldメソッドを呼び出し表示する
 		 */
 		// helloWorldメソッドの実行
 		helloWorld();
@@ -20,9 +20,11 @@ public class Question5 {
 
 		/*
 		 * [概要] Q2処理
-		 * [詳細] doubleValueメソッドを呼び出し、戻り値をもとに結果を表示する
+		 * [詳細] doubleValueメソッドを呼び出し戻り値をもとに表示する
 		 */
+		// 変数num2に10を設定
 		int num2 = 10;
+
 		// メソッドを呼び出して引数10の2倍を取得
 		int result2 = doubleValue(num2);
 		System.out.println(num2 + "を2倍すると" + result2 + "です。");
@@ -32,12 +34,15 @@ public class Question5 {
 
 		/*
 		 * [概要] Q3処理
-		 * [詳細] isEvenメソッドを呼び出し、偶数か奇数かを判定して表示する
+		 * [詳細] isEvenメソッドを呼び出し偶数か奇数かを判定して表示する
 		 */
+		// 変数n1に7、変数n2に10を設定
 		int n1 = 7;
 		int n2 = 10;
+
 		// 10の判定
 		System.out.println(n2 + "は" + (isEven(n2) ? "偶数" : "奇数") + "です。");
+
 		// 7の判定
 		System.out.println(n1 + "は" + (isEven(n1) ? "偶数" : "奇数") + "です。");
 
@@ -46,11 +51,11 @@ public class Question5 {
 
 		/*
 		 * [概要] Q4処理
-		 * [詳細] 外部クラス Greeting のインスタンスを生成しメソッドを呼び出す
+		 * [詳細] 外部クラスGreetingのインスタンスを生成しメソッドを呼び出す
 		 */
-		
 		// Greetingクラスをインスタンス化
 		Greeting greeting = new Greeting();
+
 		// sayHelloメソッドを実行
 		greeting.sayHello();
 
@@ -77,14 +82,14 @@ public class Question5 {
 	}
 
 	/**
-	 * Q1: Hello, World!を表示するメソッド
+	 * Q1.Hello, World!を表示するメソッド
 	 */
 	public static void helloWorld() {
 		System.out.println("Hello, World!");
 	}
 
 	/**
-	 * Q2: 引数の2倍の値を返すメソッド
+	 * Q2.引数の2倍の値を返すメソッド
 	 * @param num 整数
 	 * @return 引数の2倍の値
 	 */
@@ -93,7 +98,7 @@ public class Question5 {
 	}
 
 	/**
-	 * Q3: 偶数かどうかを判定するメソッド
+	 * Q3.偶数かどうかを判定するメソッド
 	 * @param num 整数
 	 * @return 偶数ならtrue、奇数ならfalse
 	 */
